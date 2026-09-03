@@ -1,0 +1,23 @@
+// @import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+// @import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+// Bootstrap variables
+@import "../scss/variable";
+
+@import './components/user';
+
+@import './components/custom_calender';
+
+@import "./components/badge";
+
+@import "./components/satisfaction_chart";
+
+@import "./components/employee_status";
+
+@import "./components/recentActivity";
+
+@import './components/employee_overview';
+
+@import './components/table';
+
+@import "bootstrap/scss/bootstrap";

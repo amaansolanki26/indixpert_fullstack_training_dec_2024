@@ -1,0 +1,22 @@
+{
+  "name": "interia_indixpert_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaansolanki26/Interia_Indixpert_.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amaansolanki26/Interia_Indixpert_/issues"
+  },
+  "homepage": "https://github.com/amaansolanki26/Interia_Indixpert_#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

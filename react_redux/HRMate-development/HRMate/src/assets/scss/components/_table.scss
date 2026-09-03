@@ -1,0 +1,7 @@
+.table-scroll {
+  max-height: 280px;   
+  overflow-y: auto;
+}
+.table-scroll::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,64 @@
+
+@use "./variables" as *;
+
+@use "./custom.scss" as *;
+
+@use "./sidenav.scss" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+
+@import "./menu/menu.scss";
+@import "./menu/menu-Details/menuDetail.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+ 
+* {
+  font-family: 'Figtree', sans-serif;
+}
+ 
+.bg-dashboard {
+  background-color: $background;
+}
+.bg-secondary-subtle{
+  background-color:$secondary-subtle !important;
+}
+.primary {
+  color: $primary;
+}
+
+.light {
+  color: $light;
+} 
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+
+// @import "~bootstrap/scss/functions";
+ 
+// User Variables
+// @import "user-variables";
+ 
+// theme variables
+// @import "theme/variables";
+ 
+// theme utilitiles
+// @import "theme/utilities";
+ 
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/maps";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/utilities/api";
+// Bootstrap
+// @import "~bootstrap/scss/bootstrap";
+ 
+// Theme
+// @import "theme/theme";

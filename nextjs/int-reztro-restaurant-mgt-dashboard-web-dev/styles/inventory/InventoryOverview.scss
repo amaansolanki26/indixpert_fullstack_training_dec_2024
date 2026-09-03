@@ -1,0 +1,149 @@
+.inventory-overview-row {
+    margin-bottom: 20px;
+}
+
+.inventory-overview-card {
+    border-radius: 18px;
+    background: #fff;
+    height: 100%;
+
+    .card-body {
+        padding: 15px;
+    }
+}
+
+.overview-card-head {
+
+    p {
+        margin: 0;
+        font-size: 13px;
+        color: #858585;
+        font-weight: 500;
+    }
+
+    h3 {
+        margin: 4px 0 0;
+        font-size: 28px;
+        color: #2b2b2b;
+        font-weight: 700;
+
+        span {
+            font-size: 13px;
+            color: #858585;
+            font-weight: 500;
+        }
+    }
+}
+
+.overview-select {
+    width: 128px;
+    border: 0;
+    background-color: transparent;
+    color: #555;
+    font-size: 12px;
+    padding: 0 28px 0 0;
+    cursor: pointer;
+
+    &:focus {
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.supply-chart {
+    margin-top: -8px;
+
+    .apexcharts-tooltip {
+        border: 0 !important;
+        border-radius: 12px !important;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08) !important;
+    }
+}
+
+.stock-level-card {
+    .stock-bars {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 20px 0 20px;
+
+        span {
+            width: 13.33px;
+            height: 48px;
+            border-radius: 5px;
+            display: inline-block;
+
+        }
+
+        .inStock {
+            background: #ff642f;
+        }
+
+        .lowStock {
+            background: #ffd7b8;
+        }
+
+        .outOfStock {
+            background: #333;
+        }
+    }
+
+    .stock-legends {
+        gap: 14px;
+
+        >div {
+            flex: 1;
+            position: relative;
+            padding-left: 12px;
+        }
+
+        .dot {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        .dot.inStock {
+            background: #ff642f;
+        }
+
+        .dot.lowStock {
+            background: #ffd7b8;
+        }
+
+        .dot.outOfStock {
+            background: #333333;
+        }
+
+        p {
+            margin: 0 0 3px;
+            font-size: 12px;
+            color: #858585;
+        }
+
+        strong {
+            font-size: 13px;
+            color: #2b2b2b;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .stock-level-card {
+        .stock-bars {
+            gap: 8px;
+
+            span {
+                width: 3.13px;
+            }
+        }
+
+        .stock-legends {
+            align-items: flex-start !important;
+        }
+    }
+}

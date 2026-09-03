@@ -1,0 +1,60 @@
+.calendar-action-page {
+  padding: 20px;
+}
+
+.schedule-form-card {
+  .form-section {
+    height: 100%;
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 10px 30px rgba(20, 20, 20, 0.04);
+
+    h5 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #252525;
+    }
+
+    .form-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .form-control,
+    .form-select {
+      min-height: 45px;
+      border: 1px solid #eeeeee;
+      border-radius: 12px;
+      background-color: #fafafa;
+      font-size: 14px;
+      box-shadow: none;
+
+      &:focus {
+        border-color: #ff642f;
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgba(255, 100, 47, 0.08);
+      }
+    }
+  }
+
+  .schedule-submit-btn {
+    min-height: 48px;
+    border: 0;
+    border-radius: 14px;
+    background: #ff642f;
+    color: #fff;
+    font-weight: 700;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #ef5622 !important;
+      color: #fff !important;
+    }
+  }
+}

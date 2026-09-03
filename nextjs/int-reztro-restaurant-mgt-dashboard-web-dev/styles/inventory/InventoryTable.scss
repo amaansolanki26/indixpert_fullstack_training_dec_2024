@@ -1,0 +1,543 @@
+.inventory-table-card {
+  border-radius: 18px;
+  overflow: hidden;
+
+  .card-header {
+    padding: 18px;
+  }
+}
+
+.inventory-tabs {
+  background: #f7f7f7;
+  padding: 5px;
+  border-radius: 20px;
+
+  button {
+    border: 0;
+    background: #f7f7f7;
+    color: #858585;
+    border-radius: 15px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 600;
+
+    &.active {
+      background: #ff642f;
+      color: #fff;
+    }
+  }
+
+  .tab-link {
+    color: #858585;
+    border-radius: 15px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      background: #ff642f;
+      color: #fff;
+    }
+  }
+}
+
+.inventory-actions {
+  .inventory-search {
+    width: 260px;
+    height: 38px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .input-group-text,
+    .form-control {
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      font-size: 13px;
+    }
+  }
+
+  .inventory-filter {
+    width: 120px;
+    height: 38px;
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    box-shadow: none;
+  }
+
+  .add-product-btn {
+    height: 38px;
+    border: 0;
+    border-radius: 12px;
+    background: #ff642f;
+    color: #FFFFFF;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+
+    .plus {
+      height: 16px;
+      width: 16px;
+    }
+
+    &:hover {
+      color: #333333;
+    }
+  }
+}
+
+.custom-data-table {
+  thead {
+    th {
+      padding: 14px 18px;
+      color: #9a9a9a;
+      font-size: 12px;
+      font-weight: 500;
+      border-bottom: 1px solid #f0f0f0;
+      white-space: nowrap;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 12px 18px;
+      color: #333333;
+      font-size: 14px;
+      border-bottom: 1px solid #f1f1f1;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+}
+
+.table-sort-btn {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  .sort-icon {
+    font-size: 10px;
+    opacity: 0.5;
+  }
+}
+
+.inventory-item {
+
+  img,
+  .item-placeholder {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    object-fit: cover;
+    background: #DEDEDE;
+    flex-shrink: 0;
+  }
+
+  span {
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  small {
+    display: none !important;
+  }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 6px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  &.available {
+    background: #FFEEE0;
+    color: #333333;
+
+    &::before {
+      background: #FDCEA1;
+    }
+  }
+
+  &.low {
+    background: #F7F7F7;
+    color: #333333;
+
+    &::before {
+      background: #858585;
+    }
+  }
+
+  &.out {
+    background: #EBEBEB;
+    color: #333333;
+
+    &::before {
+      background: #333333;
+    }
+  }
+}
+
+.stock-progress {
+  .progress-track {
+    width: 80px;
+    height: 4px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    overflow: hidden;
+
+    span {
+      display: block;
+      height: 100%;
+      background: #FF6B1E;
+      border-radius: inherit;
+    }
+  }
+
+  strong {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+}
+
+.stock-cell {
+  >.status-badge {
+    display: none !important;
+  }
+}
+
+.action-btns {
+  .btn {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 6px 10px;
+    color: #333333;
+    background: #EBEBEB;
+  }
+
+  .update-stock-btn {
+    background: #FFEEE0;
+    border-color: #fff0df;
+    color: #333333;
+  }
+}
+
+.table-footer {
+  padding: 16px 18px;
+
+  .showing-box {
+    color: #888;
+    font-size: 13px;
+
+    .form-select {
+      width: 70px;
+      border-radius: 10px;
+      border: 1px solid #eeeeee;
+      box-shadow: none;
+      font-size: 13px;
+    }
+  }
+}
+
+.inventory-filter-toggle {
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 14px;
+  background: #ffeadb;
+  color: #252525;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: #ffdcc4;
+    color: #252525;
+  }
+}
+
+.mobile-filter-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+}
+
+.mobile-filter-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.mobile-filter-content {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  right: 12px;
+  width: auto;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #252525;
+  }
+
+  .form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .form-select {
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    font-size: 13px;
+
+    &:focus {
+      border-color: #ff642f;
+      box-shadow: none;
+    }
+  }
+
+  .add-product-btn {
+    height: 44px;
+    border: 0;
+    border-radius: 12px;
+    background: #ff642f;
+    color: #fff;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.mobile-filter-close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  color: #6e6f78;
+  font-size: 35px;
+  line-height: 1;
+  z-index: 3;
+}
+
+@media (max-width: 1199px) {
+  .inventory-table-card {
+    .card-header {
+      padding: 14px;
+    }
+  }
+
+  .inventory-actions {
+    width: 100%;
+    gap: 8px !important;
+
+    .inventory-search {
+      width: 220px;
+      flex: 1;
+    }
+
+    .inventory-filter {
+      min-width: 105px;
+      width: auto;
+    }
+
+    .add-product-btn {
+      white-space: nowrap;
+      padding: 0 14px;
+    }
+  }
+
+  .custom-data-table {
+    .desktop-only-col {
+      display: none !important;
+    }
+
+    th,
+    td {
+      padding: 14px 2px !important;
+      font-size: 12px !important;
+    }
+  }
+
+  .inventory-item {
+
+    img,
+    .item-placeholder {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+    }
+
+    >div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 1.2;
+    }
+
+    small {
+      display: block !important;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #8f8f8f;
+      line-height: 1.2;
+    }
+  }
+
+  .stock-cell {
+    min-width: 120px;
+
+    .stock-progress {
+
+      .progress-track {
+        width: 90px;
+        height: 5px;
+      }
+
+      strong {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+
+    >.status-badge {
+      display: inline-flex !important;
+      padding: 2px 7px;
+    }
+  }
+
+  .action-btns {
+    .btn {
+      height: 38px;
+      padding: 0 14px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .inventory-mobile-search {
+    margin-bottom: 18px;
+
+    .inventory-search {
+      flex: 1;
+      height: 54px;
+      background: #f7f7f7;
+      border-radius: 16px;
+      overflow: hidden;
+
+      .input-group-text,
+      .form-control {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .form-control {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .inventory-filter-toggle {
+    width: 54px;
+    height: 54px;
+    border: 0;
+    border-radius: 16px;
+    background: #ffeadb;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inventory-table-top {
+    display: block !important;
+  }
+
+  .inventory-tabs {
+    width: 100%;
+    background: #f7f7f7;
+    border-radius: 18px;
+    padding: 5px;
+    margin-bottom: 18px;
+
+    button,
+    .tab-link {
+      width: 50%;
+      height: 50px;
+      border-radius: 15px;
+      text-align: center;
+      justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button.active {
+      background: #ff642f;
+      color: #fff;
+    }
+
+    .tab-link {
+      color: #858585;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .table-footer {
+    justify-content: center !important;
+
+    .showing-box {
+      display: none !important;
+    }
+  }
+}

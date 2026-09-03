@@ -1,0 +1,33 @@
+.search-field, .filter-select {
+    font-size: 0.8rem;
+    border-color: #eee;
+    max-width: 180px;
+    &:focus { box-shadow: none; border-color: #ff7a59; }
+  }
+
+  .employee-table {
+    th { font-weight: 400; font-size: 0.75rem; border: none;}
+    td { font-size: 0.85rem; font-weight: 400; }
+    .avatar-dot { width: 28px; height: 28px; background: #bce4ff; border-radius: 50%; }
+    .status-pill {
+      padding: 4px 12px; border-radius: 20px; font-size: 0.7rem;
+      &.present { background: #e8f7ff; color: #007bff; }
+      &.absent { background: #fff1f0; color: #ff4d4f; }
+    }
+  
+
+  .donut-container {
+    position: relative; width: 140px; margin: 0 auto;
+    .donut { transform: rotate(-90deg); }
+    .donut-label {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      text-align: center;
+      .total-num { font-size: 1.5rem; line-height: 1; font-weight: 400; }
+      .label-text { font-size: 0.6rem; color: #aaa; }
+    }
+  }
+
+  .timeline .blue-circle {
+    width: 32px; height: 32px; background: #bce4ff; border-radius: 50%; flex-shrink: 0;
+  }
+}

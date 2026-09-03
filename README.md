@@ -1,1 +1,0 @@
-# indixpert_fullstack_training_dec_2025

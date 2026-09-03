@@ -1,0 +1,22 @@
+name: Trigger DEV Deployment
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch: 
+
+permissions:
+  id-token: write
+  contents: read  
+
+jobs:
+  deploy:
+    uses: Indixpert-Technologies/int-reztro-restaurant-mgt-dashboard-api/.github/workflows/ci-dev.yml@main
+    with:
+      target_branch: dev
+      # image_tag: ${{ github.sha }}
+      head_sha: ${{ github.sha }}
+    secrets:
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
+      APP_RUNNER_DEV_ARN: ${{ secrets.APP_RUNNER_DEV_ARN }}

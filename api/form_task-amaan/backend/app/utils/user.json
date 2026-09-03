@@ -1,0 +1,56 @@
+[
+    {
+        "personal": {
+            "firstName": "amaan",
+            "lastName": "solanki",
+            "email": "amaan@gmail.com",
+            "phone": "9876543210",
+            "dob": "2002-12-22",
+            "gender": "male",
+            "address": {
+                "address": "185 , main street",
+                "city": "jodhpur",
+                "state": "rajasthan",
+                "country": "india",
+                "zipCode": "320001"
+            }
+        },
+        "company": null,
+        "id": 1,
+        "created_at": "now"
+    },
+    {
+        "personal": {
+            "firstName": "amaan",
+            "lastName": "solanki",
+            "email": "amaan@gmail.com",
+            "phone": "9876543210",
+            "dob": "2002-12-22",
+            "gender": "male",
+            "address": {
+                "address": "185 , main street",
+                "city": "jodhpur",
+                "state": "rajasthan",
+                "country": "india",
+                "zipCode": "320001"
+            }
+        },
+        "company": {
+            "companyName": "indixpert",
+            "designation": "developer",
+            "department": "engineer",
+            "companyEmail": "a@indixpert.com",
+            "website": "https://www.indixpert.com/",
+            "gstNumber": "22AAAAA0000A1Z5",
+            "address": {
+                "address": "123,gurgaon ",
+                "city": "gurgaon",
+                "state": "dehli",
+                "country": "india",
+                "zipCode": "400001"
+            }
+        },
+        "id": 2,
+        "created_at": "now"
+    }
+]

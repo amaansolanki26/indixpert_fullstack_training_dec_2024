@@ -1,0 +1,42 @@
+$primary: #FF6B1E;
+$danger: #FDCEA1;
+$success: #FFEEE0;
+$warning: #FFD901;
+$light: #FFFFFF;
+$dark:#333333;
+$info:#F7F7F7;
+$secondary-subtle:#EBEBEB;
+$background: #F9F4EF;
+
+
+
+$font-size-base: 0.875rem;
+
+$font-sizes: (
+  8: 0.5rem,
+  9: 0.5625rem,
+  10: 0.625rem,
+  11: 0.6875rem,
+  12: 0.75rem,
+  14: 0.875rem,
+  16: 1rem,
+  18: 1.125rem,
+);
+
+$display-font-sizes: (
+  1: 2rem,
+  2: 1.75rem,
+  3: 1.62rem,
+  4: 1.5rem,
+  5: 1.37rem,
+  6: 1.25rem
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1441px
+);

@@ -1,0 +1,68 @@
+.no-caret::after {
+  display: none !important;
+}
+
+/* Layout Fix */
+.main-layout {
+  min-width: 0;
+}
+
+.main-content {
+  min-width: 0;
+  overflow-x: hidden;
+  /* ✅ FIX */
+}
+
+/* Desktop */
+.table-scroll {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 📱 Mobile → scroll */
+@media (max-width: 767.98px) {
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .custom-table {
+    min-width: 900px;
+    width: max-content;
+  }
+}
+
+/* 📲 Tablet → shrink but show FULL data */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table-scroll {
+    overflow-x: hidden;
+    /* no scroll */
+  }
+
+  .custom-table {
+    width: 100%;
+    table-layout: auto;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .custom-table .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .custom-table svg {
+    width: 12px;
+    height: 12px;
+  }
+}

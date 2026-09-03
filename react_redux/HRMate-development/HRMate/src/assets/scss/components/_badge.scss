@@ -1,0 +1,32 @@
+.schedule-panel {
+  .schedule-row { margin-bottom: 25px; }
+
+  .time-column {
+    font-size: 0.75rem;
+    color: #8a8a8a;
+    line-height: 1.4;
+  }
+
+  .content-column {
+    border-left: 2px solid #f2f2f2; 
+    
+    .event-title {
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  }
+
+  .exact-badge {
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 0.72rem;
+    font-weight: 400;
+    border: none;
+
+    &.badge-all-dept { background-color: #e3f2fd; color: #0081f1; }
+    &.badge-product-dev { background-color: #fff2ee; color: #ff7043; }
+    &.badge-marketing { background-color: #fff2ee; color: #ff7043; }
+    &.badge-hr { background-color: #e1f5fe; color: #03a9f4; }
+  }
+}

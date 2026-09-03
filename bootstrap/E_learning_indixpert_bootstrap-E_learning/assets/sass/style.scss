@@ -1,0 +1,122 @@
+$primary : #49BBBD;
+$info:#27B1DC;
+$success:#252641;
+$gray:#B2B3CF;
+
+//fonts
+
+$font-family-base:"Poppins","sans-serif";
+
+ #girlimage {
+      clip-path: ellipse(100% 49.5% at 210px );
+    }
+.rotate-45{
+    transform: rotate(80deg);
+}
+
+#book1{
+    background-image: url('./../images/Book.png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book1:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+    
+}
+#book2{
+    background-image: url('./../images/Book\ \(1\).png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book2:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+    
+}
+#book3{
+    background-image: url('./../images/Booke.png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book3:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+}
+#book4{
+    background-image: url('./../images/Book\ \(2\).png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book4:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+}
+#book5{
+    background-image: url('./../images/Book\ \(3\).png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book5:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+}
+#book6{
+    background-image: url('./../images/Book\ \(4\).png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+}
+
+#book6:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+}
+#book7{
+    background-image: url('./../images/Book\ \(5\).png');
+    height: 418.43px;
+    width: 104.39px;
+    background-repeat: no-repeat;
+    
+}
+
+#book7:hover{
+    background-image: url("./../images/Detail.png");
+    transition: 1s;
+    background-repeat: no-repeat;
+    width: 684.78px;
+    height: 429.61px;
+}
+
+
+@import './../../node_modules/bootstrap/scss/functions';
+@import './../../node_modules/bootstrap/scss/variables';
+@import './../../node_modules/bootstrap/scss/bootstrap.scss';

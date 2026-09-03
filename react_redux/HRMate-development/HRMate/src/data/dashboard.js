@@ -1,0 +1,25 @@
+export const dashboardData = {
+  kpi: [
+    { month: "Jan", value: 32 },
+    { month: "Feb", value: 48 },
+    { month: "Mar", value: 42 },
+    { month: "Apr", value: 25 },
+    { month: "May", value: 50 },
+    { month: "Jun", value: 62 },
+    { month: "Jul", value: 58 },
+    { month: "Aug", value: 68 },
+    { month: "Sep", value: 83.74 },
+    { month: "Oct", value: 72 },
+    { month: "Nov", value: 45 },
+    { month: "Dec", value: 74 },
+  ],
+  attendance: [
+  { date: "9 Feb", present: 50, late: 30, absent: 20 },
+  { date: "10 Feb", present: 42, late: 45, absent: 13 },
+  { date: "11 Feb", present: 50, late: 35, absent: 15 },
+  { date: "12 Feb", present: 40, late: 50, absent: 10 },
+  { date: "13 Feb", present: 52, late: 38, absent: 10 },
+  { date: "14 Feb", present: 62, late: 25, absent: 13 },
+  { date: "15 Feb", present: 52, late: 35, absent: 13 },
+  ],
+};
